@@ -1,0 +1,103 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    text-align: justify;
+}
+
+blockquote {
+    margin: 0px 40px;
+    padding-bottom: 10px;
+}
+
+body {
+    background-image: url("../imagens/fundo.png");
+}
+
+img {
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: limegreen;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: limegreen;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding-bottom: 10px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+    border: 5px solid limegreen;
+}
+
+main {
+    background-color: #F4F1F883;
+    margin: auto;
+    padding: 10px 0px;
+    max-width: 730px;
+    min-width: 200px;
+}
+
+nav{
+    background-color: limegreen;
+    padding: 30px 8px;
+    text-align: left;
+}
+
+nav a{
+    color: white;
+    padding: 30px 0.6%;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #00000080;
+    text-decoration: underline;
+    transition: 0.5s;
+}
+
+p {
+    padding-bottom: 10px;
+}
+
+section {
+    padding: 0px 22px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+}
+
+td {
+    border: 2px solid silver;
+    column-width: 150px;
+    padding: 5px;
+    text-align: center;
+}
+
+th {
+    border: 2px solid silver;
+    text-align: center;
+}
+
+ul{
+    padding: 0px 0px 10px 20px;
+}
+
+#tabela {
+    padding-bottom: 10px;
+}

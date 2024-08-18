@@ -1,0 +1,116 @@
+* {
+    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
+}
+
+#cabecalho {
+    background-color: #6175f0;
+    padding-left: 34px;
+}
+
+#cabecalho h1 {
+    color: white;
+    font-family: "Kaushan Script";
+    font-size: 36px; 
+    padding-top: 20px;
+}
+
+#cabecalho h2 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    padding-bottom: 13px;
+}
+
+#hoje {
+    background-color: #f8cef7;
+    border: 1px solid #ff56fb;
+    float: right;
+    margin: 15px 25px 0px 25px;
+    padding: 20px 0px 30px 0px;
+    text-align: center;
+    width: 405px;
+}
+
+#hoje img {
+    width: 112px;
+    margin-bottom: 21px;
+}
+
+#hoje h2 {
+    padding-bottom: 20px;
+}
+
+#hoje h3 {
+    padding: 21px 0px;
+}
+
+#hoje p {
+    margin: 0px 35px;
+}
+
+#musica {
+    white-space: pre-line;
+}
+
+#musica h2 {
+    margin: 0px 12px;
+}
+
+#musica p:nth-of-type(n) {
+    margin: 0px 12px;
+}
+
+#musica p:nth-of-type(2n) {
+    margin: 0px 34px;
+}
+
+#verdade {
+    gap: 13px;
+    margin-right: 25px;
+}
+
+#verdade h2 {
+    padding-top: 12px;
+}
+
+#verdade img {
+    margin: 0px 13px 0px 0px;
+    width: 310px;
+    float: left;
+}
+
+#verdade p {
+    padding: 11px 0px;
+}
+
+.destacado {
+    color: #004a79;
+    background-color: #c4caf3;
+}
+
+body{
+    text-align: justify;
+}
+
+h1 {
+    font-weight: 500;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+h3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+p {
+    font-family: Arial;
+    font-size: 14px;
+}

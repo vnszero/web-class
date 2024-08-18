@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% load static %}
+{% load mathfilters %}
+
+{% block content %}
+  <h1>Gerenciador de Tesouros </h1>
+  <section id="tesouros">
+    <table>
+      <caption>Estes são os tesouros acumulados do Barba-Ruiva em suas aventuras</caption>
+      <thead>
+        <tr>
+          <th>Tesouro</th>
+          <th>Nome</th>
+          <th>Valor unitário</th>
+          <th>Quantidade</th>
+          <th>Valor total</th>
+          <th colspan="2"></th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for tesouro in tesouros %}
+          <tr>
+            <td><img src="{{ tesouro.img_tesouro.url }}" alt="{{ tesouro.img_tesouro.url }}"></td>
+            <td>{{ tesouro.nome }}</td> 
+            <td>{{ tesouro.preco }}</td>
+            <td>{{ tesouro.quantidade }}</td>
+            <td>{{ tesouro.preco |mul:tesouro.quantidade }}</td>
+            <td><a href="{% url "atualizar" tesouro.id %}"><img src="{% static "imgs/edit.png" %}" alt="editar"></a></td>
+            <td><a href="{% url "deletar" tesouro.id %}"><img src="{% static "imgs/delete.svg" %}" alt="deletar"></a></td>
+          </tr>
+        {% empty %}
+          <tr>
+            <td colspan="7">Nenhum tesouro cadastrado</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="4">Total geral</td>
+          <td id="total_geral">{{ total_geral }}</td>  <td colspan="2"></td>
+        </tr>
+      </tfoot>
+    </table>
+    <a id="inserir" href="{% url "inserir" %}" class="add">+</a>
+  </section>
+  <p>Yarr Harr, marujo! Aqui é o temido Barba-Ruiva e você deve me ajudar
+      a contabilizar os espólios das minhas aventuras!</p>
+{% endblock %}

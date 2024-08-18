@@ -1,0 +1,20 @@
+
+#baixar {
+  width: 100%;
+  box-sizing: border-box;
+  line-height: 1.5em;
+  font-size: 20px;
+}
+
+#baixar > img {
+  height: 0.75em;
+}
+
+forms {
+  display: flex;
+  flex-direction: column;
+}
+
+forms label {
+  margin: 10px 0;
+}
